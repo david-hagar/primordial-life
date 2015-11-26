@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Rigid body - Physijs</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	'use strict';
+
+	<script type="text/javascript" src="lib/three.min.js"></script>
+	<script type="text/javascript" src="lib/stats.js"></script>
+	<script type="text/javascript" src="lib/physi.js"></script>
+	<script type="text/javascript" src="dist/all.js"></script>
+
+	<script type="text/javascript">
+	
+
+	Physijs.scripts.worker = 'lib/physijs_worker.js';
+	Physijs.scripts.ammo = 'ammo.js';
+	
+
+
+
+	window.onload = function(){
+		window.primordialWorld = new PrimordialWorld();
+	};
+
+	</script>
+</head>
+
+<body>
+	<div id="heading">
+		<h1>Rigid Body + User Interaction</h1>
+		<p>Move your cursor near the boxes to push them.</p>
+	</div>
+	<div id="viewport"></div>
+</body>
+
+</html>
